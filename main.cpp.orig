@@ -1,0 +1,30 @@
+/* File: main.cpp
+   Authors: Joe Polin, Jeremy Benson, Hamza Qaiser
+   Desc.: Main file to start up defender
+*/
+
+#include <QtGui>
+#include "defender.h"
+
+int main(int argc, char** argv)
+{
+  // Start application
+  QApplication game(argc, argv);
+
+  // Load the stylesheet
+//  QFile styleFile( "style.qss" );
+//  styleFile.open( QFile::ReadOnly );
+//  QString style = QLatin1String(styleFile.readAll());
+//  game.setStyleSheet( style );
+
+//  // Make the background white
+//  QPalette pal = game.palette();
+//  pal.setColor(QPalette::Window, Qt::white);
+//  game.setPalette(pal);
+  
+  // Construct game and show it
+  Defender defender;
+  defender.show();
+
+  return game.exec();
+}
